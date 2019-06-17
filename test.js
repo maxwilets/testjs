@@ -1,5 +1,5 @@
 var tester = require('acme-challenge-test');
-
+var key = 'AIzaSyDIfwa1x5RH-TnGnBE1SddQKh6wkFcpjm0';
 // The dry-run tests can pass on, literally, 'example.com'
 // but the integration tests require that you have control over the domain
 var domain = 'example.com';
