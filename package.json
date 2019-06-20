@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/maxwilets/testjs#readme",
   "dependencies": {
+    "acme-challenge-test": "^3.3.2",
     "googleapis": "^40.0.0"
   },
   "devDependencies": {},
