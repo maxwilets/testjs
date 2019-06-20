@@ -1,7 +1,6 @@
 {
   "name": "testjs",
   "version": "1.0.0",
-  "description": "",
   "main": "test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +17,7 @@
   "homepage": "https://github.com/maxwilets/testjs#readme",
   "dependencies": {
     "googleapis": "^40.0.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
