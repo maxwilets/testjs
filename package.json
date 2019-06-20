@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/maxwilets/testjs/issues"
   },
-  "homepage": "https://github.com/maxwilets/testjs#readme"
+  "homepage": "https://github.com/maxwilets/testjs#readme",
+  "dependencies": {
+    "googleapis": "^40.0.0"
+  }
 }
