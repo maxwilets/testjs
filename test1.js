@@ -14,7 +14,7 @@ const projectId = 'east-high-support'
 const keyFilename = './credentials.json'
 const storage = new Storage({projectId, keyFilename});
 
-// Makes an authenticated API request.
+//Makes an authenticated API request.
 try {
   const [buckets] = await storage.getBuckets();
 
@@ -24,8 +24,7 @@ try {
   });
 } catch (err) {
   console.error('ERROR:', err);
-}
-
+};
 
 authorize(function(authClient) {
 	var request = {
