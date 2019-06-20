@@ -1,7 +1,11 @@
 var tester = require('acme-challenge-test');
 // The dry-run tests can pass on, literally, 'example.com'
 // but the integration tests require that you have control over the domain
-var domain = 'example.com';
+//code for GCLOUD
+// CREATE gcloud dns managed-zones create zone_name --description='newzone' --dns-name='dns_name.com'
+// LIST gcloud dns record-sets list --zone=zone_name
+// DELETE gcloud dns managed-zones delete zone_name
+var domain = 'e';
 
 tester
 	.testRecord('http-01', domain, {
