@@ -15,17 +15,18 @@ const keyFilename = './credentials.json'
 const storage = new Storage({projectId, keyFilename});
 
 //Makes an authenticated API request.
+async function bukryd(){
 try {
   const [buckets] = await storage.getBuckets();
 
-  console.log('Buckets:');
+  console.log('Buckets:')
   buckets.forEach(bucket => {
     console.log(bucket.name);
   });
 } catch (err) {
   console.error('ERROR:', err);
-};
-
+}};
+bukryd()
 authorize(function(authClient) {
 	var request = {
 	  // Identifies the project addressed by this request.
