@@ -46,13 +46,15 @@ authorize(function(authClient) {
 	  }
   
 	  // TODO: Change code below to process the `response` object:
-	  console.log(JSON.stringify(response, null, 2));
+		console.log(JSON.stringify(response, null, 2));
 	});
   });
   function authorize(callback) {
 		google.auth.getApplicationDefault(function(err, authClient) {
 			if (err) {
 				console.error('authentication failed: ', err);
+				console.log(`${dns.managedZones} helloooototoeioteioeotjoijfojwoifnowifneoifnoifnw`)
+;
 				return;
 			}
 			if (authClient.createScopedRequired && authClient.createScopedRequired()) {
