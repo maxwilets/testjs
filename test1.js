@@ -53,8 +53,7 @@ authorize(function(authClient) {
 		google.auth.getApplicationDefault(function(err, authClient) {
 			if (err) {
 				console.error('authentication failed: ', err);
-				console.log(`${dns.managedZones} helloooototoeioteioeotjoijfojwoifnowifneoifnoifnw`)
-;
+			
 				return;
 			}
 			if (authClient.createScopedRequired && authClient.createScopedRequired()) {
@@ -63,48 +62,4 @@ authorize(function(authClient) {
 			}
 			callback(authClient);
 		});
-	}
-//   function authorize(callback) {
-// 	google.auth.getApplicationDefault(function(err, authClient) {
-// 	  if (err) {
-// 		console.error('authentication failed: ', err);
-// 		return;
-// 	  }
-// 	  if (authClient.createScopedRequired && authClient.createScopedRequired()) {
-// 		var scopes = ['https://www.googleapis.com/auth/cloud-platform'];
-// 		authClient = authClient.createScoped(scopes);
-// 	  }
-// 	  callback(authClient);
-// 	});
-//   }
-// // The dry-run tests can pass on, literally, 'example.com'
-// // but the integration tests require that you have control over the domain
-// //code for GCLOUD
-
-// var domain = 'e';
-
-// tester
-// 	.testRecord('http-01', domain, {
-// 		// Should set a TXT record for dnsHost with dnsAuthorization and ttl || 300
-// 		set: function(opts) {
-// 			console.log('set opts:', opts);
-// 			throw new Error('set not implemented');
-// 		},
-
-// 		// Should remove the *one* TXT record for dnsHost with dnsAuthorization
-// 		// Should NOT remove otherrecords for dnsHost (wildcard shares dnsHost with
-// 		// non-wildcard)
-// 		remove: function(opts) {
-// 			console.log('remove opts:', opts);
-// 			throw new Error('remove not implemented');
-// 		},
-
-// 		// Should get the record via the DNS server's API
-// 		get: function(opts) {
-// 			console.log('get opts:', opts);
-// 			throw new Error('get not implemented');
-// 		}
-// 	})
-// 	.then(function() {
-// 		console.info('PASS');
-// 	});
+	};
